@@ -5,14 +5,22 @@
 }
 
 body{
+    background-image: url(/image/space.jpg);
+    background-position: center;
+    background-size: 500px;
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
     background-color: aqua;
+    font-family: 'Roboto', sans-serif;
 }
 h2{
     font-size: 5rem;
-    color:rgb(71, 71, 71);
+    color: #3DB2FF;
     font-weight: bold;
 }
 .coming-soon{
+    padding-top: 20rem;
     min-height: 100vh;
     display:flex;
     align-items: center;
@@ -31,5 +39,26 @@ h2{
 .hour,
 .minute,
 .seconds{
-    font-size:3.5rem
+    font-size:3.5rem;
+    color:white;
 }
+h3{
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    h2{
+        font-size: 3rem;
+    }
+    .day,
+.hour,
+.minute,
+.seconds{
+    font-size:2rem;
+    color:white;
+}
+h3{
+    color: red;
+    font-size: 1rem;
+}
+  }
